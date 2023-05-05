@@ -478,8 +478,8 @@ html {
 }
 
 
-.info-ramen{
-color: #f0ffff;
+.info-ramen {
+    color: #f0ffff;
 
     text-align: center;
     font-style: oblique;
@@ -496,4 +496,8 @@ color: #f0ffff;
     background: linear-gradient(-45deg, rgb(222, 187, 255), pink, rgb(205, 231, 255), rgb(255, 255, 255));
     background-size: 400% 400%;
     animation: gradienttitle 15s ease infinite;
+}
+
+.info-ramen1 {
+    text-align: justify;
 }
