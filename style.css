@@ -476,3 +476,24 @@ html {
     font-size: 3em;
     text-align: center;
 }
+
+
+.info-ramen{
+color: #f0ffff;
+
+    text-align: center;
+    font-style: oblique;
+    border-color: rgb(222, 187, 255);
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 1em;
+    box-shadow: 20px 15px 10px rgb(179, 179, 179);
+    font-size: 2em;
+    margin: 20px;
+    padding: 20px;
+
+    /*background*/
+    background: linear-gradient(-45deg, rgb(222, 187, 255), pink, rgb(205, 231, 255), rgb(255, 255, 255));
+    background-size: 400% 400%;
+    animation: gradienttitle 15s ease infinite;
+}
