@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dogs and ME</title>
+
+</head>
+
+<body>
+
+    <nav class="nav">
+
+        <div>
+            <h1><i class="fa fa-paw" aria-hidden="true"></i> Dogs!</h1>
+        </div>
+
+        <div class="next-page">
+            <a class=home href="./index.html">Home</a>
+
+            <a class=contact href="./contact.html">Contact</a>
+
+            <a class="Recipe" href="./Recipes.html">Recipes</a>
+
+        </div>
+
+    </nav>
+
+    <header role="banner">
+        <h1 draggable="true" ondrag="myFunction()"> Bonjour</h1>
+
+    </header>
+
+
+
+    <div>
+
+        <h2 onclick="changeName()" class="main-heading" id="Name">Hi, I am 13,</h2>
+        <P class="bio"> I am learning how to build a website right now and I go to SRB intermediate
+        </P>
+
+    </div>
+
+
+    <div onclick="myFunction()" class="photo">
+        <img src="images and videos/dog-puppy-on-garden-royalty-free-image-1586966191.jpg" width="50%" height="50%"
+            alt="Profile Picture">
+    </div>
+
+    <section class="Dog jokes">
+
+
+
+
+    </section>
+
+    <h1 class="dog-video"> Dog at a spa :0 </h1>
+    <video controls width="25%" autoplay loop muted>
+
+        <source src="images and videos/istockphoto-1321044746-640_adpp_is.mp4">
+    </video>
+    <br>
+    <br>
+    <p class="main-content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, deserunt reprehenderit corrupti fugiat
+        mollitia facilis labore ut magni qui dolor eius distinctio nisi inventore libero, reiciendis porro nulla
+        soluta vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quibusdam pariatur. Maxime,
+        eum mollitia at odio reiciendis quibusdam, accusantium dolores iste dolor voluptatum quos! Quis labore optio
+        id quisquam temporibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas hic nobis maiores
+        sequi, tempore quibusdam reiciendis iure sed nisi, ut perspiciatis consequatur adipisci ad repellendus illo
+        officia a saepe provident?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate debitis enim,
+        est impedit eos laudantium perferendis quisquam ex odio, ipsa ipsum officia ratione voluptatem veritatis
+        aspernatur iusto nihil nesciunt veniam?
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <section>
+        <H1 class="joke_title">Dog Joke Generator</H1>
+
+        <Div id="jokes" class="joke_box">Joke will appear here!</Div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <button class="Joke_button" onclick="generateJoke()">Click here for a joke!</button>
+    </section>
+
+    <section>
+        <H1 class="Dog-Breed">Dog Breed Generator</H1>
+
+        <Div id="Dog-generator" class="dog-box">Breed will appear here!</Div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <button class="dog-button" onclick="generatebreed()">Click here for a breed!</button>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div class="main-footer">
+            <h2> <a href="https://ottawahumane.ca/?gclid=EAIaIQobChMIyOP_4eHU_gIVIOfjBx1wMA4KEAAYASAAEgKXQ_D_BwE">
+                    Wanna get a dog? click here</a> </h2>
+
+            <h2> <a href="https://happyhound.ca/?gclid=EAIaIQobChMIhJmjsuTU_gIVuWtvBB3YowLzEAAYASAAEgLu5PD_BwE">
+                    Or here</a> </h2>
+        </div>
+        <br>
+        <h3 class="form-title">User Details</h3>
+        <br>
+        <form class="form" id="myForm">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Write your first name">
+
+            <label for="lastName">last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Write your last name">
+
+            <label class="email" for="email">Email Adress </label>
+            <input type="email" name="email" id="email" placeholder="Write your email adress">
+
+            <label class="birthday" for="birthday">birthday </label>
+            <input type="date" name="email" id="birthday">
+
+            <input class="submit" type="submit" value="Submit!">
+
+        </form>
+        <br>
+
+        <br>
+
+
+    </footer>
+
+    <script>
+
+        function calculateSum(firstNumber, secondNumber) {
+            var sumOfTwoNumbers = firstNumber + secondNumber;
+
+            return sumOfTwoNumbers;
+        }
+
+        var sum = calculateSum(5, 10);
+
+        console.log("Sum of two nums", sum)
+
+        var plead = "🥺";
+
+        console.log(plead)
+
+        function myFunction() {
+            console.log(plead)
+
+            alert("Hey! please don't click me what did I do to you?🥺")
+        }
+
+        function changeName(customText) {
+            document.getElementById("Name").innerText = "I can see you >:)"
+        }
+
+        document.getElementById("myForm").addEventListener("submit", handleFormSubmit)
+
+        function handleFormSubmit(event) {
+            event.preventDefault()
+
+
+
+            var firstName = document.getElementById("firstName").value
+
+            var lastName = document.getElementById("lastName").value
+
+            var email = document.getElementById("email").value
+
+            var birthday = document.getElementById("birthday").value
+
+            console.log("firstName")
+
+            console.log("lastName")
+
+            console.log("email")
+
+            console.log("birthday")
+
+            document.getElementById("Name").innerHTML = firstName
+
+        }
+
+        var jokesArray = ["Which dog is Dracula's favourite?A bloodhound", "What do dogs and a marine biologist have in common? One wags a tail and the other tags a whale.", "How are dog catchers in the UK paid? By the pound", "I recently planted a pet tree it’s like having a dog but the bark is much quieter", "What do dogs get when they graduate obedience school? Their masters", "What dog loves living in the big apple? A new-yorkie", "What kind of dogs love to take baths everyday? A shampoo-dle", "What do you call a dog that was left outside in the winter? A chili-dog", "How did the dog react when he saw the lauchness monster? He was terrier-fied", "What kind of dog chases the colour red? A bulldog", "Why aren’t dogs good dancers? Cause they have two left feet"]
+
+        function generateJoke() {
+
+            var randomNumber = Math.random() * 10;
+
+            var randomInteger = Math.floor(randomNumber);
+
+            var randomJoke = jokesArray[randomInteger]
+
+            document.getElementById("jokes").innerText = randomJoke;
+        }
+
+        var breedsArray = ["French Bulldogs", "Labrador Retrievers", "Golden Retrievers", "German Shepherd Dogs", "Poodles", "Bulldogs", "Rottweilers", "Beagles", "Dachshunds", "German Shorthaired Pointers", "Pembroke Welsh Corgis", "Australian Shepherds", "Yorkshire Terriers", "Cavalier King Charles Spaniels", "Goolden Doodle"]
+
+        function generatebreed() {
+
+            var randomNumber = Math.random() * 14;
+
+            var randomInteger = Math.floor(randomNumber);
+
+            var randomBreed = breedsArray[randomInteger]
+
+            document.getElementById("Dog-generator").innerText = randomBreed;
+        }
+
+    </script>
+</body>
+
+
+
+</html>
